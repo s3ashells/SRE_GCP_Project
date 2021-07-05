@@ -1,0 +1,5 @@
+.terraform/
+
+credentials.json
+
+gcp.tfvars
