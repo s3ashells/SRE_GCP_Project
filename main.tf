@@ -42,7 +42,7 @@ resource "google_compute_instance" "consul" {
   metadata_startup_script = "curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -; sudo apt-add-repository 'deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main';  sudo apt-get update && sudo apt-get install consul"
 
   metadata = {
-    ssh-keys = "rkarthikrajdev1999@gmail.com:${file("~/.ssh/id_ed25519.pub")}"
+    ssh-keys = "${var.ssh-username}:${file("~/.ssh/id_ed25519.pub")}"
   }
 
   network_interface {
@@ -64,7 +64,7 @@ resource "google_compute_instance" "server" {
   metadata_startup_script = "sudo apt-get update; sudo apt-get install git-all; sudo apt-get -y upgrade; wget https://dl.google.com/go/go1.16.4.linux-amd64.tar.gz; tar -xvf go1.16.4.linux-amd64.tar.gz; sudo mv go /usr/local; export GOROOT=/usr/local/go; export GOPATH=$HOME/Projects/Proj1; export PATH=$GOPATH/bin:$GOROOT/bin:$PATH"
   
   metadata = {
-    ssh-keys = "rkarthikrajdev1999@gmail.com:${file("~/.ssh/id_ed25519.pub")}"
+    ssh-keys = "${var.ssh-username}:${file("~/.ssh/id_ed25519.pub")}"
   }
   hostname = "sreserver256.example.com"
   network_interface {

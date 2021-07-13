@@ -5,6 +5,12 @@ variable "name" {
   type        = string
 }
 
+variable "ssh-username" {
+  description = <<-EOT
+      Name of the ssh-username.
+    EOT
+  type        = string
+}
 variable "subnet_cidr" {
   description = <<-EOT
       CIDR for vpc
