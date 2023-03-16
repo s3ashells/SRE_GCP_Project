@@ -1,4 +1,4 @@
-## Toggl Track SRE Home Assignment
+## SRE GCP Assignment
  This project is to create an 
   automated way to
 provisioning and configure the following in Google Cloud Platform using Terraform:
