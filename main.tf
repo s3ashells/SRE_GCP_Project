@@ -66,7 +66,7 @@ resource "google_compute_instance" "server" {
   metadata = {
     ssh-keys = "${var.ssh-username}:${file("~/.ssh/id_ed25519.pub")}"
   }
-  hostname = "sreserver256.example.com"
+  hostname = "${var.hostname}"
   network_interface {
     network = google_compute_network.vpc.name
     access_config {
