@@ -5,9 +5,10 @@ provisioning and configure the following in Google Cloud Platform using Terrafor
 
 ![gcp](./images/gcpterraform.PNG)
 
+
 ## License
 
-This project is licensed under the terms of the [GNU Lesser General Public License v2.1](LICENSE).
+This project is licensed under the terms of the [GNU Affero General Public License v3.0](LICENSE).
 
 Copyright (c) 2023 Karthikraja R
 
