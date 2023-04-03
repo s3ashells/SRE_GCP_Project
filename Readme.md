@@ -4,7 +4,14 @@
 provisioning and configure the following in Google Cloud Platform using Terraform:
 
 ![gcp](./images/gcpterraform.PNG)
-## components
+
+## License
+
+This project is licensed under the terms of the [GNU Lesser General Public License v2.1](LICENSE).
+
+Copyright (c) 2023 Karthikraja R
+
+# components
 
 ### Consul Server
 
